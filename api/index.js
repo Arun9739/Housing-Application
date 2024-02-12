@@ -9,7 +9,7 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 
-const mongoUrl = process.env.MONGO_URL || 'mongodb+srv://nayakarun02:KPuuUT3H8Ed5uLs1@cluster0.seilxb3.mongodb.net/';
+const mongoUrl = process.env.MONGO_URL;
 
 // MongoDB connection
 mongoose.connect(mongoUrl, {
